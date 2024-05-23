@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginVertical="4dp"
+        android:theme="@style/Theme.Bibip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivFotoVeiculo"
+                android:layout_width="80dp"
+                android:layout_height="78dp"
+                android:contentDescription="Foto do veiculo"
+                android:src="@drawable/car_icon" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvApelido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="apelido"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Title"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="mfh3d87"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="modelo"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="tipo"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivViewDetails"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/info_icon"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/ivEdit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/edit_icon"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/delete_icon"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="8dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

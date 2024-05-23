@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_meus_veiculos">
+
+    <fragment
+        android:id="@+id/navigation_meus_veiculos"
+        android:name="br.udesc.bibip.ui.meus_veiculos.MeusVeiculosFragment"
+        android:label="@string/title_meus_veiculos"
+        tools:layout="@layout/fragment_meus_veiculos" />
+
+    <fragment
+        android:id="@+id/navigation_situacao"
+        android:name="br.udesc.bibip.ui.situacao.SituacaoFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_situacao" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_minha_conta"
+        android:name="br.udesc.bibip.ui.minha_conta.MinhaContaFragment"
+        android:label="@string/title_minha_conta"
+        tools:layout="@layout/fragment_minha_conta" />
+</navigation>

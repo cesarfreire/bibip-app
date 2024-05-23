@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.detalhes_veiculo.DetalhesVeiculoActivity"
+    android:theme="@style/Theme.Bibip">
+
+    <TextView
+        android:id="@+id/tvVeiculoApelido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Apelido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main"
+        app:layout_constraintBottom_toTopOf="@id/materialCardView"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginVertical="4dp"
+        android:layout_marginTop="16dp"
+        android:theme="@style/Theme.Bibip"
+        app:cardElevation="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvVeiculoApelido"
+        app:layout_constraintBottom_toTopOf="@id/btnAdicionarAbastecimento"
+        tools:layout_editor_absoluteX="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:theme="@style/Theme.Bibip">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:theme="@style/Theme.Bibip">
+
+                <TextView
+                    android:id="@+id/titutloUltimaMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="@string/titulo_ultima_media" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/valorUltimaMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/km_por_litro"
+                    android:textSize="30sp"
+                    android:theme="@style/Theme.Bibip"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:theme="@style/Theme.Bibip">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tituloUltimoPreco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_ultimo_preco"
+                android:textSize="25sp"
+                android:theme="@style/Theme.Bibip"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/valorUltimoPreco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/ultimo_preco"
+                android:textSize="30sp"
+                android:theme="@style/Theme.Bibip"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <Button
+        android:id="@+id/btnAdicionarAbastecimento"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="4dp"
+        android:text="Abastecer"
+        app:layout_constraintBottom_toTopOf="@+id/tvQtdadeAbastecimentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <TextView
+        android:id="@+id/tvQtdadeAbastecimentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abastecimentos_registrados"
+        app:layout_constraintBottom_toTopOf="@id/rvAbatecimentosList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAdicionarAbastecimento" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAbatecimentosList"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAdicionarAnotacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtdadeAbastecimentos"
+        tools:listitem="@layout/list_abastecimentos" />
+
+
+
+    <Button
+        android:id="@+id/btnAdicionarAnotacao"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="4dp"
+        android:text="Adicionar Anotação"
+        app:layout_constraintBottom_toTopOf="@+id/tvQtdadeAnotacoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvAbatecimentosList" />
+
+    <TextView
+        android:id="@+id/tvQtdadeAnotacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abastecimentos_registrados"
+        app:layout_constraintBottom_toTopOf="@id/rvAnotacoesList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAdicionarAnotacao"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAnotacoesList"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtdadeAnotacoes"
+        app:layout_constraintBottom_toTopOf="parent"
+        tools:listitem="@layout/list_anotacoes" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginVertical="4dp"
+        android:theme="@style/Theme.Bibip"
+        app:cardElevation="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:baselineAligned="false">
+
+
+            <TextView
+                android:id="@+id/tvTituloModelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="Modelo do veículo:"
+                app:layout_constraintBottom_toTopOf="@+id/tvModeloVeiculo"
+                app:layout_constraintEnd_toStartOf="@+id/tvValorTitulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tvModeloVeiculo"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/tvTituloCor"
+                app:layout_constraintEnd_toStartOf="@+id/tvValorVeiculo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTituloModelo"
+                tools:text="modelo" />
+
+
+            <TextView
+                android:id="@+id/tvTituloCor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Cor do veículo:"
+                app:layout_constraintBottom_toTopOf="@+id/tvCorVeiculo"
+                app:layout_constraintEnd_toStartOf="@+id/tvMultasTitulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvModeloVeiculo" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvCorVeiculo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/tvTituloPlaca"
+                app:layout_constraintEnd_toStartOf="@+id/tvMultasVeiculo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTituloCor"
+                tools:text="cor" />
+
+
+            <TextView
+                android:id="@+id/tvTituloPlaca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Placa:"
+                app:layout_constraintBottom_toTopOf="@+id/tvPlacaVeiculo"
+                app:layout_constraintEnd_toStartOf="@+id/tvPendenciasFinanceirasTitulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCorVeiculo" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvPlacaVeiculo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvPendenciasFinanceiras"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTituloPlaca"
+                tools:text="placa" />
+
+
+            <TextView
+                android:id="@+id/tvValorTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Valor FIPE:"
+                app:layout_constraintBottom_toTopOf="@+id/tvValorVeiculo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvTituloModelo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvValorVeiculo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="valor_veiculo"
+                app:layout_constraintBottom_toTopOf="@+id/tvMultasTitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvModeloVeiculo"
+                app:layout_constraintTop_toBottomOf="@+id/tvValorTitulo" />
+
+
+            <TextView
+                android:id="@+id/tvMultasTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Quantidade de multas:"
+                app:layout_constraintBottom_toTopOf="@+id/tvMultasVeiculo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvTituloCor"
+                app:layout_constraintTop_toBottomOf="@+id/tvValorVeiculo" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvMultasVeiculo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="qtdade_multas"
+                app:layout_constraintBottom_toTopOf="@+id/tvPendenciasFinanceirasTitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvCorVeiculo"
+                app:layout_constraintTop_toBottomOf="@+id/tvMultasTitulo" />
+
+
+            <TextView
+                android:id="@+id/tvPendenciasFinanceirasTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Valor em dívidas:"
+                app:layout_constraintBottom_toTopOf="@+id/tvPendenciasFinanceiras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvTituloPlaca"
+                app:layout_constraintTop_toBottomOf="@+id/tvMultasVeiculo" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvPendenciasFinanceiras"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="valor_devendo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvPlacaVeiculo"
+                app:layout_constraintTop_toBottomOf="@+id/tvPendenciasFinanceirasTitulo" />
+
+            <TextView
+                android:id="@+id/tvStatusVeiculo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="80dp"
+                android:gravity="center"
+                android:text="status_veiculo"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

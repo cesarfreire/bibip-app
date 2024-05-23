@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Bibip</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_veiculo">Adicione um novo veículo</string>
+    <string name="hint_apelido">Informe um apelido do seu veículo</string>
+    <string name="hint_placa">Informe a placa do veículo</string>
+    <string name="hint_marca">Informe a marca/fabricante</string>
+    <string name="hint_modelo">Informe o modelo do veículo</string>
+    <string name="hint_ano_fabricacao">Informe o ano de fabricação</string>
+    <string name="add_btn_texto">Adicionar</string>
+    <string name="update">Atualizar</string>
+    <string name="txt_bem_vindo_subtitulo">Vamos criar sua conta? =)</string>
+    <string name="hint_nome">Informe seu primeiro nome</string>
+    <string name="btn_text_welcome">Bora!</string>
+    <string name="hint_senha">Informe sua senha</string>
+    <string name="ja_tenho_conta_text">Já tem uma conta? Faça login!</string>
+    <string name="hint_email">Informe seu melhor e-mail</string>
+    <string name="criar_conta_text">Não tem uma conta? Crie agora!</string>
+    <string name="hint_login_email">Informe o e-mail cadastrado</string>
+    <string name="txt_login_titulo">Olá do Bibip!</string>
+    <string name="title_user">Conta</string>
+    <string name="title_registro">Registro</string>
+    <string name="title_login">Login</string>
+    <string name="txt_bem_vindo_titulo">Bem vindo ao Bibip!</string>
+    <string name="title_meus_veiculos">Veiculos</string>
+    <string name="title_minha_conta">Conta</string>
+    <string name="hint_tipo_veiculo">Carro, moto, caminhão..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_quilometragem">Quilometragem atual</string>
+    <string name="hint_quilometragem_atual">Informe a quilometragem atual</string>
+    <string name="hint_litros_abastecidos">Litros abastecidos</string>
+    <string name="hint_valor_pago">Valor pago por litro</string>
+    <string name="titulo_adicionar_abastecimento">Adicionar um abastecimento</string>
+    <string name="km_por_litro">%.2f Km/l</string>
+    <string name="ultimo_preco">R$ %.2f /l</string>
+    <string name="titulo_ultima_media">Última Média</string>
+    <string name="titulo_ultimo_preco">Último Preço</string>
+    <string name="titulo_adicionar_anotacao">Adicione uma anotação sobre o veículo</string>
+    <string name="hint_titulo_anotacao">Título da anotação</string>
+    <string name="hint_descricao_anotacao">Descrição da anotação</string>
+    <string name="abastecimentos_registrados">%1$s abastecimentos</string>
+    <string name="anotacoes_registradas">%1$s anotações</string>
+    <string name="title_situacao">Situação</string>
+    <string name="valor_veiculo">R$ %.2f</string>
+    <string name="quantidade_de_litros">Quantidade de litros</string>
+    <string name="detalhes_quantidade_de_litros">Quantidade de litros</string>
+    <string name="detalhes_valor_pago">Valor Pago</string>
+    <string name="detalhes_quilometragem">Quilometragem</string>
+    <string name="abastecimento_valor_total">Valor total: R$ %.2f</string>
+    <string name="abastecimento_quilometragem">Quilometragem: %1$s</string>
+    <string name="abastecimentos_qtade_litros">Litros: %.2f</string>
+    <string name="abastecimento_valor_por_litro">Valor por litro: R$ %.2f</string>
+
+</resources>

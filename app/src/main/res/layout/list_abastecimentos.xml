@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginVertical="4dp"
+        android:theme="@style/Theme.Bibip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDataAbastecimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="dataAbastecimento"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Title"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvQuilometragem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abastecimento_quilometragem"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvQuantidadeLitros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abastecimentos_qtade_litros"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvValor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abastecimento_valor_por_litro"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvValorTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abastecimento_valor_total"
+                    android:layout_marginHorizontal="12dp"
+                    style="@style/TextAppearance.AppCompat.Body1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivDetalhesAbastecimento"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/info_icon"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="8dp"/>
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivEditarAbastecimento"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:src="@drawable/edit_icon"-->
+<!--                    android:background="?selectableItemBackgroundBorderless"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+
+                <ImageView
+                    android:id="@+id/ivDeletarAbastecimento"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/delete_icon"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_marginTop="8dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

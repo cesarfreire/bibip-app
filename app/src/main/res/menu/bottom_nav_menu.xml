@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_meus_veiculos"
+        android:icon="@drawable/car_icon"
+        android:title="@string/title_meus_veiculos" />
+    <item
+        android:id="@+id/navigation_situacao"
+        android:icon="@drawable/icon_buscar_multas"
+        android:title="@string/title_situacao" />
+
+    <item
+        android:id="@+id/navigation_minha_conta"
+        android:icon="@drawable/account"
+        android:title="@string/title_minha_conta" />
+
+</menu>
